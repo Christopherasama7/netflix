@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: sans-serif;
+    color: white;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 150px;
+}
+
+header img{
+    width: 200px;
+}
+
+header a{
+    align-content: center;
+    padding: 5px 3px;
+    background-color: red;
+    color: antiquewhite;
+    margin: 50px;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(images/1st.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+}
+
+.header-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: antiquewhite;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); 
+    position: relative;
+    font-size: 20px;
+}
+
+.header-content h1, .sect2 h1, .sect3 h1, .sect4 h1, .sect5 h1{
+    font-size: 50px;
+    font-weight: 30%;
+}
+
+.email{
+    margin: 20px;
+}
+.email input{
+    padding: 22px 40px;
+    background-color: transparent;
+    width: 300px;
+}
+
+.email button{
+    background-color: red;
+    color: aliceblue;
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+hr{
+    border: 3px solid grey;
+}
+
+.sect2, .sect3, .sect4, .sect5{
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 110px;
+    padding: 30px;
+    width: 80%;
+    align-items: center;
+    height: 50vh;
+}
+
+.sect4{
+    padding-left: 170px;
+    width: 30%;
+}
+
+
+/* sect6 begins */
+.sect6{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after{
+    content: "+";
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    /* transition: max-height 0.5s, padding 0.5s; */
+}
+
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    transition: rotate(135deg);
+}
+
+
+.sect6 h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 60px;
+}
+
+.email-container{
+    margin: 40px;
+    text-align: center;
+}
+
+.sect7 .Quest{
+    margin-left: 155px;
+    margin-top: 50px;
+}
+.sect7 .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 30px;
+    /* justify-content: center; */
+}
+
+.sect7 .box a{
+    display: block;
+    font-size: .9rem;
+    padding: 3px 1.8rem;
+    color: #f3f3f3;
+    margin-left: 100px;
+}
+
+@media screen {
+    
+}
